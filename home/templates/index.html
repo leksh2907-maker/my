@@ -1,0 +1,296 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekshmeendhra seenuvasan | Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Alex Morgan, Full Stack Developer specializing in Python, Django and JavaScript.">
+
+    <!-- Google Fonts: Space Grotesk for headings (technical, geometric),
+         Inter for body copy (clean and highly readable) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <!-- ===================== PRE-LOADER ===================== -->
+    <div id="preloader">
+        <span class="preloader-bracket">&lt;/&gt;</span>
+    </div>
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">LS<span class="dot">.</span></a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero" id="home">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-container">
+            <div class="hero-text reveal">
+                <p class="hero-eyebrow">// full stack developer</p>
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Lekshmeendhra seenuvasan</span></h1>
+                <h2 class="hero-typed">
+                    <span id="typed-text"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-intro">
+                   I am a passionate BE Computer Science student and aspiring Full Stack Developer.
+                   I enjoy building responsive and user-friendly web applications using Python, Django, HTML, CSS, JavaScript, and MySQL.
+                   I'm continuously learning new technologies and creating projects that strengthen my problem-solving and development skills 
+                  while preparing for a successful career in software development.
+                </p>
+                <div class="hero-actions">
+                    <a href="{% static 'Resume.pdf' %}" class="btn btn-primary" download>
+                        Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-image reveal">
+                <div class="hero-image-frame">
+                    <!-- Replace with your own photo at home/static/images/profile.jpg -->
+                    <img src="{% static 'profile.jpeg' %}" alt="Lekshmeendhra seenuvasan profile photo">
+                </div>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+            <span></span>
+        </a>
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section class="section" id="about">
+        <div class="section-container">
+            <p class="section-eyebrow">About</p>
+            <h2 class="section-title">A little about me</h2>
+
+            <div class="about-grid">
+                <div class="about-bio reveal">
+                    <p>
+                        I'm a full stack developer who enjoys turning complex problems
+                        into simple, well-structured software. My focus is on building
+                        applications that are fast, maintainable and pleasant to use &mdash;
+                        on both sides of the stack.
+                    </p>
+                    <p>
+                        Outside of writing code, I like breaking down system designs,
+                        contributing to open source, and continually sharpening my
+                        fundamentals in databases and backend architecture.
+                    </p>
+
+                    <div class="about-tech">
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">Django</span>
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">MySQL</span>
+                        <span class="tech-pill">HTML5</span>
+                        <span class="tech-pill">CSS3</span>
+                        <span class="tech-pill">Git</span>
+                    </div>
+                </div>
+
+                <div class="about-cards reveal">
+                    <div class="glass-card">
+                        <h3>Education</h3>
+                        <p class="glass-card-main">B.E in Computer Science</p>
+                        <p class="glass-card-sub">Saveetha Engineering College &middot; 2025 &ndash; 2029</p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Career Objective</h3>
+                        <p class="glass-card-sub">
+                            To work with a product-driven team where I can build
+                            scalable backend systems and grow into a well-rounded
+                            full stack engineer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS SECTION ===================== -->
+    <section class="section section-alt" id="skills">
+        <div class="section-container">
+            <p class="section-eyebrow">Skills</p>
+            <h2 class="section-title">What I work with</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">Frontend</h3>
+
+                    <div class="skill-item">
+                        <div class="skill-item-head"><span>HTML</span><span>95%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-percent="95"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-item-head"><span>CSS</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-percent="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-item-head"><span>JavaScript</span><span>80%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-percent="80"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">Backend</h3>
+
+                    <div class="skill-item">
+                        <div class="skill-item-head"><span>Python</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-percent="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-item-head"><span>Django</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-percent="85"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">Database</h3>
+
+                    <div class="skill-item">
+                        <div class="skill-item-head"><span>MySQL</span><span>80%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-percent="80"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">Tools</h3>
+
+                    <div class="skill-item">
+                        <div class="skill-item-head"><span>Git</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-percent="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-item-head"><span>GitHub</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-percent="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-item-head"><span>VS Code</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-percent="90"></div></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS SECTION ===================== -->
+    <section class="section" id="projects">
+        <div class="section-container">
+            <p class="section-eyebrow">Projects</p>
+            <h2 class="section-title">Things I've built</h2>
+
+            {% if projects %}
+            <div class="projects-grid">
+                {% for project in projects %}
+                <div class="project-card reveal">
+                    <div class="project-body">
+                        <h3 class="project-title">{{ project.title }}</h3>
+                        <p class="project-desc">{{ project.description }}</p>
+
+                        <div class="project-tags">
+                            {% for tech in project.technology_list %}
+                            <span class="tech-pill tech-pill-sm">{{ tech }}</span>
+                            {% endfor %}
+                        </div>
+
+                        <div class="project-links">
+                            {% if project.github_link %}
+                            <a href="{{ project.github_link }}" class="btn btn-sm btn-outline" target="_blank" rel="noopener">GitHub</a>
+                            {% endif %}
+                            {% if project.live_demo %}
+                            <a href="{{ project.live_demo }}" class="btn btn-sm btn-primary" target="_blank" rel="noopener">Live Demo</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="empty-state reveal">
+                <p>No projects yet &mdash; add some from the Django admin panel at <code>/admin/</code>.</p>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section class="section section-alt" id="contact">
+        <div class="section-container">
+            <p class="section-eyebrow">Contact</p>
+            <h2 class="section-title">Let's work together</h2>
+
+            {% if messages %}
+                {% for message in messages %}
+                <div class="form-alert form-alert-{{ message.tags }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+
+            <form class="contact-form glass-card" action="{% url 'home' %}" method="POST">
+                {% csrf_token %}
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="#home" class="nav-logo">LS<span class="dot">.</span></a>
+
+            <div class="footer-socials">
+                <a href="https://github.com/leksh2907-maker" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/lekshmeendhra-s-8a5b3b37a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+                <a href="mailto:leksh2907@gmail.com" aria-label="Email">Email</a>
+            </div>
+
+            <p class="footer-copy">&copy; <span id="year"></span> Lekshmeendhra Seenuvasan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ===================== BACK TO TOP ===================== -->
+    <button id="backToTop" aria-label="Back to top">&uarr;</button>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
