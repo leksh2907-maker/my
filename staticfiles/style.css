@@ -379,9 +379,9 @@ h1, h2, h3, h4 {
 
 .hero-image-frame img {
     width: 100%;
-    height: 100%;
+    height: 150%;
     object-fit: cover;
-    border-radius: calc(var(--radius-lg) - 4px);
+    border-radius: calc(var(--radius-lg) - 8px);
     background: var(--bg-alt);
 }
 
